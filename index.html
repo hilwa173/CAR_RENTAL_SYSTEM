@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car_Rental_System</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+    <header>
+    <a href="#" class="logo"><img src="images/logo1.png" alt="Car Rental Logo" /></a>
+
+        <nav>
+                <div class="menu-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+ <div class="" id=""></div>
+   <ul class="nav-bar">
+<li><a href="#home">Home</a></li>
+<li><a href="list.html">Car List</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+<!-- <li><a href="#blog">Blog</a></li>
+<li><a href="#search-booking">Search & Book</a></li> -->
+   </ul>
+</nav>
+  <div id="login-btn">
+    <button class="btnLog">Login</button>
+</div>
+    </header>
+  <div class="login-form-container" id="logintry">
+
+    <span class="fas fa-times" id="close-login-form" onclick=closeLoginForm()></span>
+
+    <form action="">
+    <h3>user login</h3>
+    <input type="email" placeholder="email" class="box">
+    <input type="password" placeholder="password" class="box">
+    <p>forget your password <a href="#">click here</a></p>
+    <input type="submit" value="login" class="btnLog">
+    <p>dont have account? <a href="#" id="sign-btn" class="register-link" onclick=showSign()>create one</a></p>
+   </form>
+</div>
+
+    <div class="signup-form">
+       <div><span class="fas fa-times" id="close-sign-form" onclick="closeSignForm() "></span></div>
+    <div>  <form action="">
+            <h2>Sign Up</h2>
+              <div>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="Fname" class="box" placeholder="Enter your full name" required>
+            </div>
+            <div>
+                <label for="name">Email:</label>
+                <input type="email" id="email" name="Email" placeholder="Enter your email" class="box" required>
+            </div>
+          <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" class="box" placeholder="Enter a password" required>
+        </div>
+           <div>
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="Cpassword" class="box" placeholder="Confirm your password"
+                    required>
+        </div>
+            <button type="submit" class="btnLog">Sign Up</button>
+    <p>already have account? <a href="#" class="login-link" onclick=showLogin()>Login</a></p>
+        </form></div>
+    </div>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Welcome to XYZ <br> Car Rental</h1>
+            <p>Experience the freedom of the open road <br> with our premium car rental services.</p>
+ 
+        </div>
+    </section>
+    <section class="car-list" id="car-list">
+        <div class="service-container">
+        <div class="boxs">
+            <div class="boxs-img">
+                <img src="images/toyotaCorolla.png" alt="imgs">
+            </div>
+        <div>
+                <h3>Toyota Corolla</h3>
+                <p>Model year: <span>2023 Model</span></p>
+               <p>Fuel Type : <span>Petrol</span></p>
+                 <p>Transmission : <span>Automatic</span></p>
+                 <p>Seating Capacity : <span>5</span></p>
+                 <p>Cylinder : <span>4</span></p>
+                <p>Body Type: <span>Sedan</span></p>
+                <h2> $ 58500 <span>/day</span></h2>
+                <a href="#" class="btn">Rent Now</a>
+        </div>
+        </div>
+        
+            <div class="boxs">
+                <div class="boxs-img">
+                    <img src="images/Honda.png" alt="imgs">
+                </div>
+                <div>
+                    <h3>Honda Civic</h3>
+                    <p>Model year: <span>2016 Model</span></p>
+                    <p>Fuel Type : <span>Diesel</span></p>
+                    <p>Transmission : <span>Manual</span></p>
+                    <p>Seating Capacity : <span>5</span></p>
+                    <p>Cylinder : <span>4</span></p>
+                    <p>Body Type: <span>Sedan</span></p>
+                    <h2> $ 58500 <span>/day</span></h2>
+                    <a href="#" class="btn">Rent Now</a>
+                </div>
+           </div>
+        <div class="boxs">
+            <div class="boxs-img">
+                <img src="images/bmw_z4" alt="imgs">
+            </div>
+            <div>
+                <h3>BMW Z4</h3>
+                <p>Model year: <span>2023 Model</span></p>
+                <p>Fuel Type : <span>Petrol</span></p>
+                <p>Transmission : <span>Automatic</span></p>
+                <p>Seating Capacity : <span>2</span></p>
+                <p>Cylinder : <span>6</span></p>
+                <p>Body Type: <span>Convertible</span></p>
+                <h2> $ 58500 <span>/day</span></h2>
+                <a href="#" class="btn">Rent Now</a>
+            </div>
+        </div>
+            <div class="boxs">
+                <div class="boxs-img">
+                    <img src="images/bmw_x5" alt="imgs">
+                </div>
+                <div>
+                    <h3>BMW X5</h3>
+                    <p>Model year: <span>2023 Model</span></p>
+                    <p>Fuel Type : <span>Diesel</span></p>
+                    <p>Transmission : <span>Automatic</span></p>
+                    <p>Seating Capacity : <span>5</span></p>
+                    <p>Cylinder : <span>6</span></p>
+                    <p>Body Type: <span>SUV</span></p>
+                    <h2> $ 58500 <span>/day</span></h2>
+                    <a href="#" class="btn">Rent Now</a>
+                </div>
+              </div>
+            <div class="boxs">
+                <div class="boxs-img">
+                    <img src="images/ford.png" alt="imgs">
+                </div>
+                <div>
+                    <h3>Ford</h3>
+                    <p>Model year: <span>2023 Model</span></p>
+                    <p>Fuel Type : <span>Petrol</span></p>
+                    <p>Transmission : <span>Automatic</span></p>
+                    <p>Seating Capacity : <span>5</span></p>
+                    <p>Cylinder : <span>4</span></p>
+                    <p>Body Type: <span>Sedan</span></p>
+                    <h2> $ 58500 <span>/day</span></h2>
+                    <a href="#" class="btn">Rent Now</a>
+                </div>
+        </div>
+                <div class="boxs">
+                    <div class="boxs-img">
+                        <img src="images/isuzu_dmax.png" alt="imgs">
+                    </div>
+                    <div>
+                        <h3>Isuzu D-Max</h3>
+                        <p>Model year: <span>2023 Model</span></p>
+                        <p>Fuel Type : <span>Diesel</span></p>
+                        <p>Transmission : <span>Manual</span></p>
+                        <p>Seating Capacity : <span>5</span></p>
+                        <p>Cylinder : <span>4</span></p>
+                        <p>Body Type: <span>Pickup Truck</span></p>
+                        <h2> $ 58500 <span>/day</span></h2>
+                        <a href="#" class="btn">Rent Now</a>
+                    </div>
+                </div>
+            <div class="boxs">
+                <div class="boxs-img">
+                    <img src="images/isuzuS-CabZ.png" alt="imgs">
+                </div>
+                <div>
+                    <h3>Isuzu S-CAB Z</h3>
+                    <p>Model year: <span>2023 Model</span></p>
+                    <p>Fuel Type : <span>Diesel</span></p>
+                    <p>Transmission : <span>Manual</span></p>
+                    <p>Seating Capacity : <span>5</span></p>
+                    <p>Cylinder : <span>4</span></p>
+                    <p>Body Type: <span>SUV</span></p>
+                    <h2> $ 58500 <span>/day</span></h2>
+                    <a href="#" class="btn">Rent Now</a>
+                </div>
+                </div>
+            <div class="boxs">
+                <div class="boxs-img">
+                    <img src="images/ferrariRoma.png" alt="imgs">
+                </div>
+                <div>
+                    <h3>Ferrari Roma</h3>
+                    <p>Model year: <span>2023 Model</span></p>
+                    <p>Fuel Type : <span>Petrol</span></p>
+                    <p>Transmission : <span>Automatic</span></p>
+                    <p>Seating Capacity : <span>2</span></p>
+                    <p>Cylinder : <span>8</span></p>
+                    <p>Body Type: <span>Coupe</span></p>
+                    <h2> $ 58500 <span>/day</span></h2>
+                    <a href="#" class="btn">Rent Now</a>
+                </div>
+                </div>
+        
+            <div class="boxs">
+                <div class="boxs-img">
+                    <img src="images/ferrarisf90.png" alt="imgs">
+                </div>
+                <div>
+                    <h3>Ferrari SF90</h3>
+                    <p>Model year: <span>2023 Model</span></p>
+                    <p>Fuel Type : <span>Petrol</span></p>
+                    <p>Transmission : <span>Automatic</span></p>
+                    <p>Seating Capacity : <span>2</span></p>
+                    <p>Cylinder : <span>8</span></p>
+                    <p>Body Type: <span>Coupe</span></p>
+                    <h2> $ 58500 <span>/day</span></h2>
+                    <a href="#" class="btn">Rent Now</a>
+                </div>
+            </div>
+        
+                <div class="boxs">
+                    <div class="boxs-img">
+                        <img src="images/audiQ3.png" alt="imgs">
+                    </div>
+                    <div>
+                        <h3>Audi Q3</h3>
+                        <p>Model year: <span>2023 Model</span></p>
+                        <p>Fuel Type : <span>Petrol</span></p>
+                        <p>Transmission : <span>Automatic</span></p>
+                        <p>Seating Capacity : <span>5</span></p>
+                        <p>Cylinder : <span>4</span></p>
+                        <p>Body Type: <span>SUV</span></p>
+                        <h2> $ 58500 <span>/day</span></h2>
+                        <a href="#" class="btn">Rent Now</a>
+                    </div>
+      
+        </div> 
+
+     
+    </div>
+    <div class="seeA">
+        <button class="see" onclick="window.location.href='./list.html';">See All</button>
+    </div>
+    </section>
+ 
+<section class="about" id="about">
+    <div class="about-container">
+        <div class="about-image">
+            <img src="images/about_img.png" alt="About Image">
+        </div>
+        <div class="about-content">
+            <h2>About Our Car Rental Service</h2>
+            <p><i>Welcome to our premier car rental service, where we strive to provide you with an unparalleled driving
+            experience. With a vast fleet of well-maintained vehicles and a team of dedicated professionals, we are
+            committed to making your transportation needs a seamless and enjoyable journey.</i></p>
+            <p><i>Our company was founded on the principle of delivering exceptional customer service, and we take great
+            pride in our ability to cater to the diverse needs of our clients. Whether you're planning a vacation, a
+            business trip, or simply need a reliable means of transportation, we have the perfect car for you.</i></p>
+            <!-- <a href="#" class="btn">Learn More</a> -->
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Have a question or need assistance? Get in touch with our friendly team.</p>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i>
+                    <div> <h4>Address</h4><p>Ethiopia, Addis Abeba</p></div>
+                </li>
+                <li> <i class="fas fa-phone-alt"></i>
+                    <div><h4>Phone</h4> <p>+2519763453</p></div>
+                </li>
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <div> <h4>Email</h4> <p>info@carrentalsystem.com</p> </div>
+                </li>
+            </ul>
+        </div>
+       
+    </div>
+</section>
+    <script src="index.js"></script>
+
+</body>
+</html>
