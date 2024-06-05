@@ -408,7 +408,7 @@ font-size: 48px;
 }
 
 
-/* Contact Section */
+/*  Section */
 .contact {
     padding: 80px 0;
     background-color: rgba(61, 55, 55, 0.5);
@@ -534,7 +534,6 @@ font-size: 48px;
     font-size: 24px;
     transition: background-color 0.3s;
 }
-
 .prev-page:hover {
     background-color: #555;
 }
