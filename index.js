@@ -1,5 +1,15 @@
+function openham() {
+    const navigation1 = document.querySelector('.navigation1');
+    navigation1.style.display = 'flex';
+                }
+ function closeham() {
+   const navigation1 = document.querySelector('.navigation1');
+ navigation1.style.display = 'none';
+                }
+        // Show the login form container when the login button is clicked
 document.querySelector('#login-btn').onclick = () => {
-    document.querySelector('.login-form-container').classList.add('active');
+    document.querySelector('.login-form-container','.signup-form').classList.add('active');
+    
 }
 
 function showSign(){
@@ -34,4 +44,3 @@ function closeLoginForm() {
             const trys=document.querySelector('logintry');
             trys.style.display='none';
         }
-       
