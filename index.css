@@ -5,6 +5,9 @@ body {
     background-repeat: no-repeat; */
   overflow: auto;
 }
+.abc{
+  color: red;
+}
 
 * {
   margin: 0;
@@ -25,6 +28,9 @@ body {
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   display: none;
   flex-direction: column;
+}
+.err{
+  color: red;
 }
 
 .ham-list ul li a {
@@ -575,7 +581,9 @@ header {
 .hidden-cars {
   border: 5px solid black;
   border-radius: 15px;
-  background: url('images/car2.jpg');
+  background: url('images/try4back.png');
+  background-repeat: no-repeat;
+ background-size: cover;
   margin-top: 50px;
 }
 
