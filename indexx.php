@@ -1,29 +1,4 @@
-<?php
- require "connection.php";
 
-  if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST['name'];
-    $user_name = $_POST['username'];
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-
-    // Hash the password
-    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-
-    // Prepare and bind
-    $stmt = $con->prepare("INSERT INTO customer_table (names, username, email, passwords) VALUES (?, ?, ?, ?)");
-    $stmt->bind_param("ssss", $name, $user_name, $email, $hashed_password);
-
-    if ($stmt->execute()) {
-        echo "New record created successfully";
-    } else {
-        echo "Error: " . $stmt->error;
-    }
-
-    $stmt->close();
-    $con->close();
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,68 +38,19 @@
    <ul class="nav-bar">
 <li><a href="#home">Home</a></li>
 <li><a href="list.php">Car List</a></li>
-<li><a href="#about">About</a></li>
+<li><a href="#about">About</a></li><data value=""></data>
 <li><a href="#contact">Contact</a></li>
 
    </ul>
 </nav>
 <div id="login-btn">
-    <button type="button" class="btnLog">Login</button>
+    <button type="button" class="btnLog" onclick="login.php">Login</button>
     <!-- <i class="far fa-user"></i> -->
 </div>
     </header>
-        <?php
-include "login.php";
-?>
 
-      <div class="login-form-container" id="logintry">
 
-   <div> <svg id="close-login-form" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
-        <path d="M 4.9902344 3.9902344 A 1.0001 1.0001 0 0 0 4.2929688 5.7070312 L 10.585938 12 L 4.2929688 18.292969 A 1.0001 1.0001 0 1 0 5.7070312 19.707031 L 12 13.414062 L 18.292969 19.707031 A 1.0001 1.0001 0 1 0 19.707031 18.292969 L 13.414062 12 L 19.707031 5.7070312 A 1.0001 1.0001 0 0 0 18.980469 3.9902344 A 1.0001 1.0001 0 0 0 18.292969 4.2929688 L 12 10.585938 L 5.7070312 4.2929688 A 1.0001 1.0001 0 0 0 4.9902344 3.9902344 z"></path>
-        </svg></div>
-    <form action="index.php" method="post">
-    <h3>user login</h3>
-    <input type="text" placeholder="username" class="box" name="fname">
-    <input type="password" placeholder="password" class="box" name="pass">
-    <p>forget your password <a href="#">click here</a></p>
-    <input type="submit" value="login" class="btnLog" name="submit">
-    <p>dont have account? <a href="#" id="sign-btn" class="register-link">create one</a></p>
-   </form>
 
-   </div>
-    <div class="signup-form">
-       <div><svg id="close-sign-form"  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
-        <path d="M 4.9902344 3.9902344 A 1.0001 1.0001 0 0 0 4.2929688 5.7070312 L 10.585938 12 L 4.2929688 18.292969 A 1.0001 1.0001 0 1 0 5.7070312 19.707031 L 12 13.414062 L 18.292969 19.707031 A 1.0001 1.0001 0 1 0 19.707031 18.292969 L 13.414062 12 L 19.707031 5.7070312 A 1.0001 1.0001 0 0 0 18.980469 3.9902344 A 1.0001 1.0001 0 0 0 18.292969 4.2929688 L 12 10.585938 L 5.7070312 4.2929688 A 1.0001 1.0001 0 0 0 4.9902344 3.9902344 z"></path>
-        </svg></div>
-      <div>  <form action="demo.php" name="signup-form" method="post">
-            <h2>Sign Up</h2>
-              
-               <div>
-                <label for="name">FullName:</label>
-                <input type="text" id="name" name="name" class="box" placeholder="Enter your full name" required>
-               </div>
-            
-            <div>
-                <label for="username">username:</label>
-                <input type="text" id="username" name="username" class="box" placeholder="Enter your username" required>
-            </div>
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" class="box" required>
-            </div>
-          <div>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" class="box" placeholder="Enter a password" required>
-        </div>
-           <div>
-                <label for="confirm-password">Confirm Password:</label>
-                <input type="password" id="confirm-password" name="Cpassword" class="box" placeholder="Confirm your password"
-                    required>
-        </div>
-            <button type="submit" class="btnLog" name="submit" onclick="validateForm()">Sign Up</button>
-    <p>already have account? <a href="#" class="login-link" id="lgn-btn">Login</a></p>
-        </form></div>
-    </div>
 
     <section class="home" id="home">
         <div class="homet">
@@ -313,7 +239,20 @@ include "login.php";
           </div>
     </div>
 </section>
+<script>
+    const form = document.getElementById('contacts');
+    const emailInput = document.getElementById('email');
+    const errorMessage = document.getElementById('error-message');
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const email = emailInput.value;
+        if (email === email.toLowerCase()) {
+            form.submit();
+        } else {
+            errorMessage.textContent = 'Please enter your email in lowercase.';
+        }
+    });
+</script>
     <script src="index.js"></script>
-
 </body>
 </html>
