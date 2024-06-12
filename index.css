@@ -584,7 +584,8 @@ header {
     flex-direction: column;
     gap: 30px;
     margin-left: 20px;
-  }  
+  }
+
   .home-content h1 {
     color: white;
     margin-bottom: 5%;
@@ -596,7 +597,6 @@ header {
     color: white;
     font-size: 20px;
   }
-
 
   .about {
     margin-top: 80px;
@@ -693,7 +693,6 @@ header {
   .logo {
     display: none;
   }
-
 
   .media {
     border-radius: 15px;

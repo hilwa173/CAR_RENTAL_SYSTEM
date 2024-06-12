@@ -25,7 +25,6 @@ body {
   text-align: center;
   width: 30rem;
   height: 200%;
-
 }
 
 .login-form-container form .box {
@@ -67,7 +66,7 @@ body {
   font-size: 2.5rem;
   padding-bottom: 1rem;
   text-transform: uppercase;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .login-form-container form p a {
@@ -89,7 +88,6 @@ body {
   transform: scale(1.1);
 }
 
-
 @media (max-width: 767px) {
   .login-form-container form {
     padding: 2rem;
@@ -103,6 +101,7 @@ body {
     height: 200%;
     margin-left: -110px;
   }
+
   .login-form-container form .box {
     margin: 2rem 0;
     text-transform: none;
@@ -110,15 +109,16 @@ body {
     font-size: 1.6rem;
     padding: 1rem 1.2rem;
     border-radius: 0.5rem;
-    margin-top: 0px;
-
+    margin-top: 0;
   }
+
   .login-form-container form p {
     padding: 1rem 0;
     font-size: 1.5rem;
     color: var(--light-color);
     margin-top: -5px;
   }
+
   .login-form-container #close-login-form {
     position: fixed;
     top: 50px;
@@ -129,7 +129,7 @@ body {
     z-index: 999;
     height: 40px;
   }
-  
+
   .login-form-container #close-login-form:hover {
     transform: scale(1.1);
   }
