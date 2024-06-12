@@ -66,23 +66,23 @@ if(isset($_POST['submit'])) {
             <form action="signup.php" name="signup-form" method="post">
                 <h2>Sign Up</h2>
                 <div>
-                    <label for="name">Full Name:</label>
+                   
                     <input type="text" id="name" name="name" class="box" placeholder="Enter your full name" required>
                 </div>
                 <div>
-                    <label for="username">Username:</label>
+                    
                     <input type="text" id="username" name="username" class="box" placeholder="Enter your username" required>
                 </div>
                 <div>
-                    <label for="email">Email:</label>
+                    
                     <input type="email" id="email" name="email" placeholder="Enter your email" class="box" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                 </div>
                 <div>
-                    <label for="password">Password:</label>
+                    
                     <input type="password" id="password" name="password" class="box" placeholder="Enter a password" required>
                 </div>
                 <div>
-                    <label for="confirm-password">Confirm Password:</label>
+                   
                     <input type="password" id="confirm-password" name="cpassword" class="box" placeholder="Confirm your password" required>
                 </div>
                 <button type="submit" class="btnLog" name="submit">Sign Up</button>
