@@ -1,11 +1,9 @@
 
 body {
-  /* background-image: url("images/car.jpg");
-    background-size: cover;
-    background-repeat: no-repeat; */
   overflow: auto;
 }
-.abc{
+
+.abc {
   color: red;
 }
 
@@ -29,8 +27,13 @@ body {
   display: none;
   flex-direction: column;
 }
-.err{
+
+.err {
   color: red;
+}
+
+.btnLog a {
+  list-style-type: none;
 }
 
 .ham-list ul li a {
@@ -66,6 +69,7 @@ header {
 }
 
 .btnLog {
+  text-decoration: none;
   display: inline-block;
   border-radius: 0.5rem;
   background-color: #76cc0d;
@@ -78,7 +82,8 @@ header {
   background: yellowgreen;
 }
 
-.login-form-container {
+
+/* .login-form-container {
   position: fixed;
   top: 27%;
   left: 25%;
@@ -108,7 +113,7 @@ header {
   font-size: 1.6rem;
   padding: 1rem 1.2rem;
   border-radius: 0.5rem;
-}
+} */
 
 .box p {
   color: #fff;
@@ -117,11 +122,11 @@ header {
   margin-top: 20px;
 }
 
-.login-form-container form p {
+/* .login-form-container form p {
   padding: 1rem 0;
   font-size: 1.5rem;
   color: var(--light-color);
-}
+} */
 
 /* .signup-form {
   position: fixed;
@@ -134,10 +139,10 @@ header {
   display: none;
 } */
 
-.login-form-container.active {
+/* .login-form-container.active {
   display: flex;
   opacity: 1;
-}
+} */
 
 /* .signup-form form {
   padding: 2rem;
@@ -164,10 +169,10 @@ header {
   width: 30%;
 }
 
-.login-form-container form .btn {
+/* .login-form-container form .btn {
   display: block;
   margin: 0.5rem 0;
-}
+} */
 
 /* .signup-form form .btn {
   display: block;
@@ -181,12 +186,12 @@ header {
   color: #fff;
 }
 
-.login-form-container form h3 {
+/* .login-form-container form h3 {
   color: var(--black);
   font-size: 2.5rem;
   padding-bottom: 1rem;
   text-transform: uppercase;
-}
+} */
 
 /* .signup-form form h3 {
   color: var(--black);
@@ -210,7 +215,7 @@ header {
   color: var(--light-color);
 } */
 
-.login-form-container form p a {
+/* .login-form-container form p a {
   text-decoration: underline;
 }
 
@@ -223,16 +228,16 @@ header {
   cursor: pointer;
   z-index: 999;
   height: 40px;
-}
+} */
 
-/* .signup-form #close-sign-form {
+.signup-form #close-sign-form {
   position: fixed;
   font-size: 2rem;
   top: 10px;
   right: 400px;
   z-index: 999;
   height: 40px;
-} */
+}
 
 #b {
   background-color: #06567d;
@@ -453,7 +458,7 @@ header {
 
   .about {
     padding: 80px 0;
-    background-color: rgba(2,0,5,0.905);
+    background-color: rgba(2, 0, 5, 0.905);
     backdrop-filter: blur(2px);
     margin-top: 50px;
     border-radius: 15px;
@@ -508,7 +513,7 @@ header {
 
   .contact {
     padding: 80px 0;
-  background-color: rgba(2,0,5,0.905);
+    background-color: rgba(2, 0, 5, 0.905);
     backdrop-filter: blur(2px);
     border-radius: 15px;
     margin-top: 50px;
@@ -584,7 +589,7 @@ header {
   border-radius: 15px;
   background: url('images/try4back.png');
   background-repeat: no-repeat;
- background-size: cover;
+  background-size: cover;
   margin-top: 50px;
 }
 
@@ -616,25 +621,27 @@ header {
   color: #fff;
   margin-bottom: 30px;
 }
- .contact-info ul li p {
-   font-size: 16px;
-   color: #fff;
-   margin-bottom: 0;
- }
 
-    .contact-info ul li i {
-      font-size: 24px;
-      color: #fff;
-      align-items: center;
-      margin-left: 20px;
-    }
-  
-    .contact-info ul li h4 {
-      font-size: 18px;
-      font-weight: 600;
-      color: #fff;
-      margin-bottom: 5px;
-    }
+.contact-info ul li p {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.contact-info ul li i {
+  font-size: 24px;
+  color: #fff;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.contact-info ul li h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
 @media (max-width: 767px) {
   body {
     background-color: white;
@@ -686,7 +693,7 @@ header {
     width: 100%;
     height: 100vh;
     border-radius: 15px;
-  background-color: rgba(2, 0, 5, 0.905);
+    background-color: rgba(2, 0, 5, 0.905);
     opacity: 80%;
     border: 2px solid black;
   }
@@ -705,7 +712,7 @@ header {
   }
 
   .about-container {
-  background-color: rgba(2, 0, 5, 0.905);
+    background-color: rgba(2, 0, 5, 0.905);
     opacity: 80%;
     display: flex;
     flex-direction: column;
@@ -718,7 +725,7 @@ header {
   }
 
   .contact {
-  background-color: rgba(2, 0, 5, 0.905);
+    background-color: rgba(2, 0, 5, 0.905);
     backdrop-filter: blur(2px);
     margin-top: 80px;
     border-radius: 15px;

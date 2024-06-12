@@ -44,8 +44,7 @@
    </ul>
 </nav>
 <div id="login-btn">
-    <button type="button" class="btnLog" onclick="login.php">Login</button>
-    <!-- <i class="far fa-user"></i> -->
+    <a href="login.php" class="btnLog">Login</a>
 </div>
     </header>
 

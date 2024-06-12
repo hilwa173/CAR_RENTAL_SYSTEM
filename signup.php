@@ -1,32 +1,27 @@
 <?php
 
 include 'connection.php';
-
-// Check if the form has been submitted
 if(isset($_POST['submit'])) {
-    // Get form data with proper escaping to prevent SQL injection
     $name = mysqli_real_escape_string($con, $_POST['name']);
     $username = mysqli_real_escape_string($con, $_POST['username']);
     $email = mysqli_real_escape_string($con, $_POST['email']);
-    $pass = mysqli_real_escape_string($con, md5($_POST['password']));
-    $cpass = mysqli_real_escape_string($con, md5($_POST['cpassword']));
-
-    // Check if the email already exists
+    $pass = mysqli_real_escape_string($con, $_POST['password']);
+    $cpass = mysqli_real_escape_string($con, $_POST['cpassword']);
     $check_email = mysqli_query($con, "SELECT * FROM customer_table WHERE email = '$email'");
     if(mysqli_num_rows($check_email) > 0) {
         $message[] = 'Email already exists!';
     } else {
-        // Check if the username already exists
         $check_username = mysqli_query($con, "SELECT * FROM customer_table WHERE username = '$username'");
         if(mysqli_num_rows($check_username) > 0) {
             $message[] = 'Username already exists!';
         } else {
-            // Check if the passwords match
             if($pass != $cpass) {
                 $message[] = 'Confirm password does not match!';
+            } elseif(strlen($pass) < 6) {
+                $message[] = 'Password must be at least 6 characters!';
             } else {
-                // Insert the new user into the database
-                mysqli_query($con, "INSERT INTO customer_table (names, username, email, passwords) VALUES ('$name', '$username', '$email', '$cpass')") or die('Query failed: ' . mysqli_error($con));
+                $hashed_pass = md5($pass);
+                mysqli_query($con, "INSERT INTO customer_table (names, username, email, passwords) VALUES ('$name', '$username', '$email', '$hashed_pass')") or die('Query failed: ' . mysqli_error($con));
                 $message[] = 'Registered successfully!';
                 // header('Location: login.php');
                 // exit(); // Ensure no further code is executed after the redirect
@@ -35,6 +30,7 @@ if(isset($_POST['submit'])) {
     }
 }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -90,9 +86,10 @@ if(isset($_POST['submit'])) {
                     <input type="password" id="confirm-password" name="cpassword" class="box" placeholder="Confirm your password" required>
                 </div>
                 <button type="submit" class="btnLog" name="submit">Sign Up</button>
-                <p>Already have an account? <a href="#" class="login-link" id="lgn-btn">Login</a></p>
+                <p>Already have an account? <a href="login.php" class="login-link" id="lgn-btn">Login</a></p>
             </form>
         </div>
     </div>
+    <script src="signup.js"></script>
 </body>
 </html>
