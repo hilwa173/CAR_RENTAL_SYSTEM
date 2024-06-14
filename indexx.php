@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +10,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
 </head>
+
+
 <body>
     <header>
     <a href="#" class="logo"><img src="images/logo1.png" alt="Car Rental Logo" /></a>
@@ -20,7 +23,7 @@
 <div class="ham-list">
    <ul>
   <li onclick="closeham()"><a href="#home">Home</a></li>
-  <li onclick="closeham()"><a href="list.html">Car List</a></li>
+  <li onclick="closeham()"><a href="list.php">Car List</a></li>
   <li onclick="closeham()"><a href="#about">About</a></li>
   <li onclick="closeham()"><a href="#contact">Contact</a></li>
 </ul>
@@ -34,59 +37,20 @@
                 </div>
    <ul class="nav-bar">
 <li><a href="#home">Home</a></li>
-<li><a href="list.html">Car List</a></li>
-<li><a href="#about">About</a></li>
+<li><a href="list.php">Car List</a></li>
+<li><a href="#about">About</a></li><data value=""></data>
 <li><a href="#contact">Contact</a></li>
 
    </ul>
 </nav>
 <div id="login-btn">
-    <button type="button" class="btnLog">Login</button>
+    <button type="button" class="btnLog" onclick="login.php">Login</button>
     <!-- <i class="far fa-user"></i> -->
 </div>
     </header>
-  <div class="login-form-container" id="logintry">
 
-   <div> <svg id="close-login-form" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
-        <path d="M 4.9902344 3.9902344 A 1.0001 1.0001 0 0 0 4.2929688 5.7070312 L 10.585938 12 L 4.2929688 18.292969 A 1.0001 1.0001 0 1 0 5.7070312 19.707031 L 12 13.414062 L 18.292969 19.707031 A 1.0001 1.0001 0 1 0 19.707031 18.292969 L 13.414062 12 L 19.707031 5.7070312 A 1.0001 1.0001 0 0 0 18.980469 3.9902344 A 1.0001 1.0001 0 0 0 18.292969 4.2929688 L 12 10.585938 L 5.7070312 4.2929688 A 1.0001 1.0001 0 0 0 4.9902344 3.9902344 z"></path>
-        </svg></div>
-    <form action="">
-    <h3>user login</h3>
-    <input type="email" placeholder="email" class="box">
-    <input type="password" placeholder="password" class="box">
-    <p>forget your password <a href="#">click here</a></p>
-    <input type="submit" value="login" class="btnLog">
-    <p>dont have account? <a href="#" id="sign-btn" class="register-link">create one</a></p>
-   </form>
-</div>
 
-    <div class="signup-form">
-       <div><svg id="close-sign-form" id="close-login-form xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
-        <path d="M 4.9902344 3.9902344 A 1.0001 1.0001 0 0 0 4.2929688 5.7070312 L 10.585938 12 L 4.2929688 18.292969 A 1.0001 1.0001 0 1 0 5.7070312 19.707031 L 12 13.414062 L 18.292969 19.707031 A 1.0001 1.0001 0 1 0 19.707031 18.292969 L 13.414062 12 L 19.707031 5.7070312 A 1.0001 1.0001 0 0 0 18.980469 3.9902344 A 1.0001 1.0001 0 0 0 18.292969 4.2929688 L 12 10.585938 L 5.7070312 4.2929688 A 1.0001 1.0001 0 0 0 4.9902344 3.9902344 z"></path>
-        </svg></div>
-    <div>  <form action="">
-            <h2>Sign Up</h2>
-              
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="Fname" class="box" placeholder="Enter your full name" required>
-            
-            <div>
-                <label for="name">Email:</label>
-                <input type="email" id="email" name="Email" placeholder="Enter your email" class="box" required>
-            </div>
-          <div>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" class="box" placeholder="Enter a password" required>
-        </div>
-           <div>
-                <label for="confirm-password">Confirm Password:</label>
-                <input type="password" id="confirm-password" name="Cpassword" class="box" placeholder="Confirm your password"
-                    required>
-        </div>
-            <button type="submit" class="btnLog">Sign Up</button>
-    <p>already have account? <a href="#" class="login-link" id="lgn-btn">Login</a></p>
-        </form></div>
-    </div>
+
 
     <section class="home" id="home">
         <div class="homet">
@@ -170,22 +134,7 @@
                     <a href="#" class="btn">Rent Now</a>
                 </div>
             </div>
-            <div class="box">
-                <div class="box-img">
-                    <img src="images/ford.png" alt="imgs">
-                </div>
-                <div>
-                    <h3>Ford</h3>
-                    <p>Model year: <span>2023 Model</span></p>
-                    <p>Fuel Type : <span>Petrol</span></p>
-                    <p>Transmission : <span>Automatic</span></p>
-                    <p>Seating Capacity : <span>5</span></p>
-                    <p>Cylinder : <span>4</span></p>
-                    <p>Body Type: <span>Sedan</span></p>
-                    <h2> $ 58500 <span>/day</span></h2>
-                    <a href="#" class="btn">Rent Now</a>
-                </div>
-            </div>
+        
             <div class="box">
                 <div class="box-img">
                     <img src="images/isuzu_dmax.png" alt="imgs">
@@ -218,61 +167,15 @@
                     <a href="#" class="btn">Rent Now</a>
                 </div>
             </div>
-            <div class="box">
-                <div class="box-img">
-                    <img src="images/ferrariRoma.png" alt="imgs">
-                </div>
-                <div>
-                    <h3>Ferrari Roma</h3>
-                    <p>Model year: <span>2023 Model</span></p>
-                    <p>Fuel Type : <span>Petrol</span></p>
-                    <p>Transmission : <span>Automatic</span></p>
-                    <p>Seating Capacity : <span>2</span></p>
-                    <p>Cylinder : <span>8</span></p>
-                    <p>Body Type: <span>Coupe</span></p>
-                    <h2> $ 58500 <span>/day</span></h2>
-                    <a href="#" class="btn">Rent Now</a>
-                </div>
-            </div>
+          
         
-            <div class="box">
-                <div class="box-img">
-                    <img src="images/ferrarisf90.png" alt="imgs">
-                </div>
-                <div>
-                    <h3>Ferrari SF90</h3>
-                    <p>Model year: <span>2023 Model</span></p>
-                    <p>Fuel Type : <span>Petrol</span></p>
-                    <p>Transmission : <span>Automatic</span></p>
-                    <p>Seating Capacity : <span>2</span></p>
-                    <p>Cylinder : <span>8</span></p>
-                    <p>Body Type: <span>Coupe</span></p>
-                    <h2> $ 58500 <span>/day</span></h2>
-                    <a href="#" class="btn">Rent Now</a>
-                </div>
-            </div>
+          
         
-            <div class="box">
-                <div class="box-img">
-                    <img src="images/audiQ3.png" alt="imgs">
-                </div>
-                <div>
-                    <h3>Audi Q3</h3>
-                    <p>Model year: <span>2023 Model</span></p>
-                    <p>Fuel Type : <span>Petrol</span></p>
-                    <p>Transmission : <span>Automatic</span></p>
-                    <p>Seating Capacity : <span>5</span></p>
-                    <p>Cylinder : <span>4</span></p>
-                    <p>Body Type: <span>SUV</span></p>
-                    <h2> $ 58500 <span>/day</span></h2>
-                    <a href="#" class="btn">Rent Now</a>
-                </div>
-        
-            </div>
-        
+              
+               
         </div>
         <div class="seeA">
-            <button type="button" class="see" onclick="window.location.href='./list.html';">See All</button>
+            <button type="button" class="see" onclick="window.location.href='./list.php';">See All</button>
         </div>
         </section>
     </section>
@@ -336,7 +239,20 @@
           </div>
     </div>
 </section>
+<script>
+    const form = document.getElementById('contacts');
+    const emailInput = document.getElementById('email');
+    const errorMessage = document.getElementById('error-message');
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const email = emailInput.value;
+        if (email === email.toLowerCase()) {
+            form.submit();
+        } else {
+            errorMessage.textContent = 'Please enter your email in lowercase.';
+        }
+    });
+</script>
     <script src="index.js"></script>
-
 </body>
 </html>

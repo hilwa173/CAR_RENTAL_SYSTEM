@@ -1,3 +1,6 @@
+<?php
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,10 +19,10 @@
         
         <div class="ham-list">
            <ul>
-          <li onclick="closeham()"><a href="index.html#home">Home</a></li>
-          <li onclick="closeham()"><a href="list.html">Car List</a></li>
-          <li onclick="closeham()"><a href="index.html#about">About</a></li>
-          <li onclick="closeham()"><a href="#index.htmlcontact">Contact</a></li>
+          <li onclick="closeham()"><a href="indexx.php#home">Home</a></li>
+          <li onclick="closeham()"><a href="list.php">Car List</a></li>
+          <li onclick="closeham()"><a href="indexx.php#about">About</a></li>
+          <li onclick="closeham()"><a href="#indexx.php#contact">Contact</a></li>
         </ul>
         </div>
         </div>
@@ -33,10 +36,10 @@
                 </div>
        <ul class="nav-bar">
     
-   <li><a href="index.html#home">Home</a></li>
-    <li><a href="list.html">Car List</a></li>
-    <li><a href="index.html#about">About</a></li>
-    <li><a href="index.html#contact">Contact</a></li>
+   <li><a href="indexx.php#home">Home</a></li>
+    <li><a href="list.php">Car List</a></li>
+    <li><a href="indexx.php#about">About</a></li>
+    <li><a href="indexx.php#contact">Contact</a></li>
  
        </ul>
     </nav>
