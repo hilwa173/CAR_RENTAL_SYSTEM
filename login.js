@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (closeBtn) {
     closeBtn.addEventListener('click', () => {
-      window.location.href = 'indexx.php';
+      window.location.href = 'index.php';
     });
   }
 

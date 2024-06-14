@@ -299,8 +299,6 @@ header {
     background-color: #667;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-
-    /* overflow: hidden; */
     transition: transform 0.3s ease;
     border: 2px solid black;
   }
@@ -311,8 +309,6 @@ header {
 
   .box-img {
     height: 200px;
-
-    /* overflow: hidden; */
   }
 
   .see {
@@ -336,8 +332,7 @@ header {
 
   .about {
     padding: 80px 0;
-    background-color: rgba(2, 0, 5, 0.905);
-    backdrop-filter: blur(2px);
+    background-color: rgba(48, 44, 44, 0.5);
     margin-top: 50px;
     border-radius: 15px;
     border: 2px solid black;
@@ -391,8 +386,7 @@ header {
 
   .contact {
     padding: 80px 0;
-    background-color: rgba(2, 0, 5, 0.905);
-    backdrop-filter: blur(2px);
+    background-color: rgba(28, 26, 26, 0.5);
     border-radius: 15px;
     margin-top: 50px;
     border: 2px solid black;
@@ -584,7 +578,8 @@ header {
     flex-direction: column;
     gap: 30px;
     margin-left: 20px;
-  }  
+  }
+
   .home-content h1 {
     color: white;
     margin-bottom: 5%;
@@ -596,7 +591,6 @@ header {
     color: white;
     font-size: 20px;
   }
-
 
   .about {
     margin-top: 80px;
@@ -693,7 +687,6 @@ header {
   .logo {
     display: none;
   }
-
 
   .media {
     border-radius: 15px;

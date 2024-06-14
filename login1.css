@@ -1,0 +1,67 @@
+
+#loginBtn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content form input {
+  font-size: 1em;
+}
+
+#loginmodal {
+  height: 500px;
+}
+
+.modal-content form button {
+  font-size: 1.2em;
+  color: rgb(255, 255, 255);
+  background-color: rgb(21, 0, 252);
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.modal-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 5% auto;
+  padding: 40px;
+  border: 1px solid #888;
+  width: 700px;
+  line-height: 170%;
+  position: relative;
+
+  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7); */
+  border-radius: 10%;
+  font-size: 2em;
+  color: white;
+  text-align: center;
+}
+
+#closeBtn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#closeBtn:hover,
+#closeBtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

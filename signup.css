@@ -23,7 +23,6 @@ body {
   backdrop-filter: blur(2px);
   text-align: center;
   width: 30rem;
-
 }
 
 .signup-form form .btn {
@@ -36,7 +35,7 @@ body {
   font-size: 2rem;
   padding-bottom: 1rem;
   text-transform: uppercase;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .signup-form form .box {
@@ -46,8 +45,7 @@ body {
   font-size: 1rem;
   padding: 1rem 1.2rem;
   border-radius: 0.5rem;
-  margin-top: 0px;
-
+  margin-top: 0;
 }
 
 .signup-form form p {
@@ -60,7 +58,7 @@ body {
   position: fixed;
   font-size: 3rem;
   top: 30px;
-  right: 440px;
+  right: 620px;
   z-index: 999;
   height: 40px;
   cursor: pointer;
@@ -73,7 +71,6 @@ body {
 /* -------------mobile------------- */
 
 @media (max-width: 767px) {
-
   .signup-form form {
     padding: 1rem;
     margin: 1rem;
@@ -84,7 +81,7 @@ body {
     text-align: center;
     width: 90%;
     margin-top: -110px;
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .signup-form #close-sign-form {
@@ -122,6 +119,7 @@ body {
     display: block;
     margin: 0.4rem 0;
   }
+
   .signup-form {
     position: fixed;
     top: 20%;
