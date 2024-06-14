@@ -76,7 +76,7 @@ body {
 .login-form-container #close-login-form {
   position: fixed;
   top: 65px;
-  right: 380px;
+  right: 600px;
   font-size: 2rem;
   color: var(--black);
   cursor: pointer;

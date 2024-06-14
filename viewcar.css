@@ -1,0 +1,31 @@
+.table-div {
+  margin-top: 35px;
+  margin-left: 20px;
+  background-color: #fff;
+  margin-right: 640px;
+}
+
+body {
+  background-image: url('images/try4back.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.table td {
+  white-space: nowrap;
+}
+
+.back-arrow {
+  background-color: #fff;
+  text-decoration: none;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.back-arrow:hover {
+  background-color: #aea5a5;
+}

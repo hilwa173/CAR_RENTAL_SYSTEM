@@ -1,0 +1,170 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('images/try4back.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.createform {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+}
+
+h1 {
+  text-align: center;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.createform h1 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.createform label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.createform input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Button Styles */
+.lsbutton {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.lsbutton input[type="submit"],
+.lsbutton input[type="reset"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.lsbutton input[type="reset"] {
+  background-color: #f44336;
+}
+
+.lsbutton input[type="submit"]:hover,
+.lsbutton input[type="reset"]:hover {
+  background-color: #45a049;
+}
+
+.createform input[type="text"],
+.createform input[type="number"],
+.createform input[type="file"] {
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+.createform input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.back-button {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+  background: #f0f0f0;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+
+.back-button:hover {
+  background: #e0e0e0;
+}
+
+/* admin Styles */
+
+
+/* Box Styles */
+.box {
+  background-color: rgba(139, 69, 19, 0.5);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+/* Heading Styles */
+
+
+
+
+/* Error Message Styles */
+.err {
+  color: #f44336;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.butons {
+  background-color: rgba(139, 69, 19, 0.5);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+.butons a {
+  display: block;
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.butons a:hover {
+  background-color: #45a049;
+}
