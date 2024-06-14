@@ -1,0 +1,84 @@
+body {
+  display: flex;
+  background-image: url('images/try4back.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.login-form-container {
+  position: fixed;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form-container form {
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 5rem;
+  box-shadow: var(--box-shadow);
+  background-color: rgba(192, 192, 192, 0.5);
+  backdrop-filter: blur(2px);
+  text-align: center;
+  width: 30rem;
+}
+
+.login-form-container form .box {
+  margin: 2rem 0;
+  text-transform: none;
+  color: var(--black);
+  font-size: 1.6rem;
+  padding: 1rem 1.2rem;
+  border-radius: 0.5rem;
+}
+
+.box p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.login-form-container form p {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  color: var(--light-color);
+}
+
+.login-form-container.active {
+  display: flex;
+  opacity: 1;
+}
+
+.login-form-container form .btn {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.login-form-container form h3 {
+  color: var(--black);
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.login-form-container form p a {
+  text-decoration: underline;
+}
+
+.login-form-container #close-login-form {
+  position: fixed;
+  top: 85px;
+  right: 700px;
+  font-size: 2rem;
+  color: var(--black);
+  cursor: pointer;
+  z-index: 999;
+  height: 40px;
+}
+
+.login-form-container #close-login-form:hover {
+  transform: scale(1.1);
+}

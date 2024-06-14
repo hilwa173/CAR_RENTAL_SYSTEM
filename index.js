@@ -38,8 +38,6 @@ document.getElementById('close-login-form').onclick = function closeLoginForm() 
 };
 
 document.getElementById('close-sign-form').onclick = function closeSignForm() {
-
   const sgn = document.querySelector('.signup-form');
   sgn.style.display = 'none';
-
 };
