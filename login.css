@@ -1,3 +1,4 @@
+
 body {
   display: flex;
   background-image: url('images/try4back.png');
@@ -9,7 +10,7 @@ body {
   position: fixed;
   left: 25%;
   width: 50%;
-  height: 50%;
+  height: 40%;
   align-items: center;
   justify-content: center;
 }
@@ -23,6 +24,7 @@ body {
   backdrop-filter: blur(2px);
   text-align: center;
   width: 30rem;
+  height: 200%;
 }
 
 .login-form-container form .box {
@@ -32,6 +34,7 @@ body {
   font-size: 1.6rem;
   padding: 1rem 1.2rem;
   border-radius: 0.5rem;
+  margin-top: 15px;
 }
 
 .box p {
@@ -45,6 +48,7 @@ body {
   padding: 1rem 0;
   font-size: 1.5rem;
   color: var(--light-color);
+  margin-top: 15px;
 }
 
 .login-form-container.active {
@@ -62,6 +66,7 @@ body {
   font-size: 2.5rem;
   padding-bottom: 1rem;
   text-transform: uppercase;
+  margin-top: 0;
 }
 
 .login-form-container form p a {
@@ -70,8 +75,8 @@ body {
 
 .login-form-container #close-login-form {
   position: fixed;
-  top: 85px;
-  right: 700px;
+  top: 65px;
+  right: 380px;
   font-size: 2rem;
   color: var(--black);
   cursor: pointer;
@@ -81,4 +86,51 @@ body {
 
 .login-form-container #close-login-form:hover {
   transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+  .login-form-container form {
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 5rem;
+    box-shadow: var(--box-shadow);
+    background-color: rgba(192, 192, 192, 0.5);
+    backdrop-filter: blur(2px);
+    text-align: center;
+    width: 150%;
+    height: 200%;
+    margin-left: -110px;
+  }
+
+  .login-form-container form .box {
+    margin: 2rem 0;
+    text-transform: none;
+    color: var(--black);
+    font-size: 1.6rem;
+    padding: 1rem 1.2rem;
+    border-radius: 0.5rem;
+    margin-top: 0;
+  }
+
+  .login-form-container form p {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    margin-top: -5px;
+  }
+
+  .login-form-container #close-login-form {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    font-size: 2rem;
+    color: var(--black);
+    cursor: pointer;
+    z-index: 999;
+    height: 40px;
+  }
+
+  .login-form-container #close-login-form:hover {
+    transform: scale(1.1);
+  }
 }

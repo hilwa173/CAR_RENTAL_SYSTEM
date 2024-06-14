@@ -52,8 +52,9 @@
 
 
     <section class="home" id="home">
+
         <div class="homet">
-        <div class="mob"><img class="mobi" src="images/black.jpeg" alt=""></div>
+        <!-- <div class="mob"><img class="mobi" src="images/try1.jpg" alt=""></div> -->
         <div class="home-content">
             <h1>Welcome to XYZ <br> Car Rental</h1>
             <p>Experience the freedom of the open road <br> with our premium car rental services.</p>
