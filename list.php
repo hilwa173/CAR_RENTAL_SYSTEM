@@ -39,8 +39,6 @@
 
     <?php
     require_once "connection.php";
-
-    // Fetch package details from the database
     $sql = "SELECT * FROM car_table";
     $result = $con->query($sql);
 
