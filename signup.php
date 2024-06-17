@@ -23,8 +23,8 @@ if(isset($_POST['submit'])) {
                 $hashed_pass = md5($pass);
                 mysqli_query($con, "INSERT INTO customer_table (names, username, email, passwords) VALUES ('$name', '$username', '$email', '$hashed_pass')") or die('Query failed: ' . mysqli_error($con));
                 $message[] = 'Registered successfully!';
-                // header('Location: login.php');
-                // exit(); // Ensure no further code is executed after the redirect
+                header('Location: login.php');
+                exit(); // Ensure no further code is executed after the redirect
             }
         }
     }

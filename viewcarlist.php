@@ -18,7 +18,8 @@
     
 <?php
 require_once "connection.php";
-$sql = "SELECT * FROM car_table";
+   //$sql = "SELECT id,car_name,year,fuel_type,transmision,capacity,cylinder,body_type,price,image_path FROM car_table";
+   $sql = "SELECT * FROM car_table";
 $result = $con->query($sql);
 ?>
 

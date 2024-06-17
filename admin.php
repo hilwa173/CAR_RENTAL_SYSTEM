@@ -48,7 +48,9 @@ if (isset($_POST['login'])) {
             <h1>Welcome, <?php echo $_SESSION['username']; ?></h1>
             <div><a id="addcar" class="admn" href="add_new_car.php">Add New Car</a></div>
             <div><a id="viewcarBtn" class="admn" href="viewcarlist.php">View Cars</a></div>
+            <div><a id="try" class="admn" href="approve.php">View Rent</a></div> 
             <div><a id="logoutBtn" class="admn" href="admnlogout.php">Logout</a></div>
+           
         </div>
     <?php endif; ?>
     <script src=" "></script>
