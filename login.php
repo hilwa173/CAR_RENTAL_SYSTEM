@@ -4,9 +4,9 @@ session_start();
 
 if(isset($_POST['submit'])){
    $email = mysqli_real_escape_string($con, $_POST['email']);
-   $pass = mysqli_real_escape_string($con, md5($_POST['password']));
+   $password = mysqli_real_escape_string($con, md5($_POST['password'])); // Using md5 for demonstration, consider using more secure hashing methods
 
-   $select_users = mysqli_query($con, "SELECT * FROM customer_table WHERE email = '$email' AND passwords = '$pass'") or die('query failed');
+   $select_users = mysqli_query($con, "SELECT * FROM customer_table WHERE email = '$email' AND passwords = '$password'") or die('Query failed: ' . mysqli_error($con));
 
    if(mysqli_num_rows($select_users) > 0){
       $row = mysqli_fetch_assoc($select_users);
@@ -14,9 +14,10 @@ if(isset($_POST['submit'])){
       $_SESSION['user_name'] = $row['name'];
       $_SESSION['user_email'] = $row['email'];
       $_SESSION['user_id'] = $row['id'];
-      header('location:index.php');
+      header('location: account.php');
+      exit; // Stop further execution after redirect
    } else {
-      $message[] = 'Incorrect email or password!';
+      $message = 'Incorrect email or password!';
    }
 }
 ?>
@@ -35,16 +36,14 @@ if(isset($_POST['submit'])){
    <script>
       <?php
       if(isset($message)){
-         foreach($message as $message){
-            echo "alert('$message');";
-         }
+         echo "alert('$message');";
       }
       ?>
    </script>
    <div class="login-form-container" id="logintry">
-         <svg id="close-login-form" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
-            <path d="M 4.9902344 3.9902344 A 1.0001 1.0001 0 0 0 4.2929688 5.7070312 L 10.585938 12 L 4.2929688 18.292969 A 1.0001 1.0001 0 1 0 5.7070312 19.707031 L 12 13.414062 L 18.292969 19.707031 A 1.0001 1.0001 0 1 0 19.707031 18.292969 L 13.414062 12 L 19.707031 5.7070312 A 1.0001 1.0001 0 0 0 18.980469 3.9902344 A 1.0001 1.0001 0 0 0 18.292969 4.2929688 L 12 10.585938 L 5.7070312 4.2929688 A 1.0001 1.0001 0 0 0 4.9902344 3.9902344 z"></path>
-         </svg>
+      <svg id="close-login-form" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
+         <path d="M 4.9902344 3.9902344 A 1.0001 1.0001 0 0 0 4.2929688 5.7070312 L 10.585938 12 L 4.2929688 18.292969 A 1.0001 1.0001 0 1 0 5.7070312 19.707031 L 12 13.414062 L 18.292969 19.707031 A 1.0001 1.0001 0 1 0 19.707031 18.292969 L 13.414062 12 L 19.707031 5.7070312 A 1.0001 1.0001 0 0 0 18.980469 3.9902344 A 1.0001 1.0001 0 0 0 18.292969 4.2929688 L 12 10.585938 L 5.7070312 4.2929688 A 1.0001 1.0001 0 0 0 4.9902344 3.9902344 z"></path>
+      </svg>
       <form action="" method="post">
          <h3>User Login</h3>
          <input type="email" placeholder="Email" class="box" name="email" required>
@@ -54,6 +53,6 @@ if(isset($_POST['submit'])){
          <p>Don't have an account? <a href="signup.php" id="sign-btn" class="register-link">Create one</a></p>
       </form>
    </div>
-    <script src="login.js"></script>
+   <script src="login.js"></script>
 </body>
 </html>
