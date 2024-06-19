@@ -53,7 +53,7 @@ $rental_requests = mysqli_fetch_all($select_requests, MYSQLI_ASSOC);
 <body>
     <header>
         <h1>Welcome, Admin</h1>
-        <a href="logout.php">Logout</a> <!-- Link to admin logout script -->
+        <a href="admin.php">Logout</a> <!-- Link to admin logout script -->
     </header>
 
     <main>
@@ -103,9 +103,7 @@ $rental_requests = mysqli_fetch_all($select_requests, MYSQLI_ASSOC);
         <?php endif; ?>
     </main>
 
-    <footer>
-        <!-- Footer content here -->
-    </footer>
+
 
 </body>
 </html>

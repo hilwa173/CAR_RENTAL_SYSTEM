@@ -332,7 +332,7 @@ header {
 
   .about {
     padding: 80px 0;
-    background-color: rgba(48, 44, 44, 0.5);
+    background-color: #667;
     margin-top: 50px;
     border-radius: 15px;
     border: 2px solid black;
@@ -386,7 +386,7 @@ header {
 
   .contact {
     padding: 80px 0;
-    background-color: rgba(28, 26, 26, 0.5);
+    background-color: #667;
     border-radius: 15px;
     margin-top: 50px;
     border: 2px solid black;
