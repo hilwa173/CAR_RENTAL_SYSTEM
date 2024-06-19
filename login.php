@@ -4,18 +4,17 @@ session_start();
 
 if(isset($_POST['submit'])){
    $email = mysqli_real_escape_string($con, $_POST['email']);
-   $password = mysqli_real_escape_string($con, md5($_POST['password'])); // Using md5 for demonstration, consider using more secure hashing methods
+   $password = mysqli_real_escape_string($con, md5($_POST['password'])); 
 
    $select_users = mysqli_query($con, "SELECT * FROM customer_table WHERE email = '$email' AND passwords = '$password'") or die('Query failed: ' . mysqli_error($con));
 
    if(mysqli_num_rows($select_users) > 0){
       $row = mysqli_fetch_assoc($select_users);
-
       $_SESSION['user_name'] = $row['name'];
       $_SESSION['user_email'] = $row['email'];
       $_SESSION['user_id'] = $row['id'];
       header('location: account.php');
-      exit; // Stop further execution after redirect
+      exit;
    } else {
       $message = 'Incorrect email or password!';
    }

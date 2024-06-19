@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HIYOAM</title>
+    <title>CAR RENTAL</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -62,7 +62,7 @@
         </div>
     </div>
     </section> 
-    <section class="hidden-cars">
+  <!--  <section class="hidden-cars">
     <section class="car-list" id="car-list">
         <div class="service">
         <span>Best services</span>
@@ -179,7 +179,7 @@
         </div>
         </section>
     </section>
- 
+-->
 <section class="about" id="about">
     <div class="about-container">
         <div class="about-image">
