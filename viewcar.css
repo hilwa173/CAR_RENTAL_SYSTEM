@@ -14,6 +14,9 @@ body {
 .table td {
   white-space: nowrap;
 }
+.pending{
+  color: #fff;
+}
 
 .back-arrow {
   background-color: #fff;
@@ -28,6 +31,22 @@ body {
 
 .back-arrow:hover {
   background-color: #aea5a5;
+}
+.back-button {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  background: #f0f0f0;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+
+.back-button:hover {
+  background: #e0e0e0;
 }
 
 /* car update */
@@ -138,7 +157,7 @@ main {
 }
 
 .success-message {
-  color: green;
+  color: #fff;
   margin-bottom: 10px;
 }
 
@@ -169,4 +188,109 @@ main {
 #lg:hover {
   color: #539d09;
   cursor: pointer;
+}
+/* viewcustomer.css */
+
+
+.admin-header a:hover {
+  text-decoration: underline;
+}
+.admin-main {
+  margin-top: 80px;
+  padding: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-main h2 {
+  margin-top: 0;
+}
+.admin-main .admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.admin-main .admin-table thead {
+  background-color: #f4f4f4;
+}
+
+.admin-main .admin-table th,
+.admin-main .admin-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.admin-main .admin-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.admin-main .admin-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.admin-main .admin-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.admin-main .admin-table tr td {
+  padding-right: 20px;
+}
+.admin-main p {
+  margin-top: 20px;
+}
+
+.admin-main {
+  margin-top: 80px;
+  padding: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-main h2 {
+  margin-top: 0;
+}
+.admin-main .admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.admin-main .admin-table thead {
+  background-color: #f4f4f4;
+}
+
+.admin-main .admin-table th,
+.admin-main .admin-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.admin-main .admin-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.admin-main .admin-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.admin-main .admin-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.admin-main .admin-table tr td {
+  padding-right: 20px;
+}
+.admin-main p {
+  margin-top: 20px;
 }

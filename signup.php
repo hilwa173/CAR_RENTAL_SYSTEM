@@ -75,8 +75,9 @@ if(isset($_POST['submit'])) {
                 </div>
                 <div>
                     
-                    <input type="email" id="email" name="email" placeholder="Enter your email" class="box" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-                </div>
+<input type="email" id="email" name="email" placeholder="Enter your email" class="box" pattern="[a-zA-Z0-9._%+-]+@gmail\.com$" title="Please enter a valid Gmail address" required>
+
+       </div>
                 <div>
                     
                     <input type="password" id="password" name="password" class="box" placeholder="Enter a password" required>

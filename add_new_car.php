@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Add Car</title>
     <link rel="stylesheet"  href="add_new_car.css">
 </head>
 <body>
@@ -21,14 +21,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $bodytype = $_POST["bdytyp"];
     $price = $_POST["pric"];
 
-    // Image upload
+ 
     $targetDir = "images/";
     $fileName = basename($_FILES["image"]["name"]);
     $targetPath = $targetDir . $fileName;
     $uploadOk = 1;
     $imageFileType = strtolower(pathinfo($targetPath, PATHINFO_EXTENSION));
 
-    // Check if image file is a actual image or fake image
+    
     $check = getimagesize($_FILES["image"]["tmp_name"]);
     if ($check !== false) {
         $uploadOk = 1;
@@ -37,26 +37,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $uploadOk = 0;
     }
 
-    // Check file size
-    if ($_FILES["image"]["size"] > 50000000) {
+    if ($_FILES["image"]["size"] > 5000000) {
        echo '<script>alert("Error: File is too large.");</script>';
         $uploadOk = 0;
     }
 
-    // Allow only certain file formats
+
     $allowedFormats = array("jpg", "jpeg", "png", "gif");
     if (!in_array($imageFileType, $allowedFormats)) {
          echo '<script>alert("Error:  Only JPG, JPEG, PNG, and GIF files are allowed.");</script>';
         $uploadOk = 0;
     }
 
-    // Check if $uploadOk is set to 0 by an error
     if ($uploadOk == 0) {
          echo '<script>alert("Error: Image upload failed.");</script>';
     } else {
-        // If everything is okay, try to upload the image
+    
         if (move_uploaded_file($_FILES["image"]["tmp_name"], $targetPath)) {
-            // Insert car details into the database using prepared statements
             $sql = "INSERT INTO car_table (car_name, year, fuel_type, transmision, capacity, cylinder, body_type, price, image_path) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
             $stmt = $con->prepare($sql);
             $stmt->bind_param("sisssisss", $carname, $year, $type, $transmission, $capacity, $cylinder, $bodytype, $price, $targetPath);

@@ -118,6 +118,7 @@ mysqli_close($con); // Close database connection
 </head>
 
 <body>
+    <a href="list.php" class="back-button">&#8592;</a>
     <header>
         <h1>Welcome, <?php echo htmlspecialchars($user['names']); ?></h1>
         <p>Email: <?php echo htmlspecialchars($user['email']); ?></p>

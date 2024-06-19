@@ -13,7 +13,7 @@ body {
 }
 
 .createform {
-  background: #333;
+  background: #fff;
   padding: 20px;
   border-radius: 8px;
   width: 400px;
@@ -21,14 +21,14 @@ body {
 
 h1 {
   text-align: center;
-  color: #fff;
+  color: #333;
   margin-bottom: 30px;
 }
 
 .createform h1 {
   margin-bottom: 10px;
   font-size: 20px;
-  color: #fff;
+  color: #333;
   text-align: center;
 }
 
@@ -36,7 +36,7 @@ h1 {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
-  color: #fff;
+  color: #333;
 }
 
 .createform input[type="submit"] {
@@ -132,9 +132,6 @@ input[type="password"] {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   width: 300px;
 }
-
-/* Heading Styles */
-
 
 
 

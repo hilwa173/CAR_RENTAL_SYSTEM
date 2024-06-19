@@ -62,6 +62,8 @@ $result = $con->query($sql);
                         <input type='hidden' name='id' value='" . $row["id"] . "'>
                         <input type='submit' value='Update'>
                     </form></td>";
+    
+
         }
     } else {
         echo "<tr><td colspan='4'>No cars found</td></tr>";

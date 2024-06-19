@@ -36,7 +36,8 @@ if (isset($_POST['id'])) {
         } else {
             $message = "Error uploading the file.";
         }
-    } else {
+    }
+     else {
         $sql = "UPDATE car_table SET 
                     car_name='$car_name', 
                     year='$year', 

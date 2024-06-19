@@ -100,7 +100,7 @@ header {
   border-radius: 4px;
   margin-top: 20px;
   transition: background-color 0.3s ease;
-  width: 30%;
+  width: 50%;
 }
 
 .box h3 {
@@ -274,7 +274,7 @@ header {
   }
 
   .service span {
-    color: yellow;
+    color: rgb(73, 3, 36);
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;

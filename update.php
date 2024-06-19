@@ -55,6 +55,8 @@ if (isset($_POST['id'])) {
     <input type='file' id='image' name='image'><br>
     
     <input type='submit' value='Update'>
+    <button type='button' onclick='window.location.href=\"./viewcarlist.php\"'>Cancel</button>
+      
 </form>
 
 </body>
